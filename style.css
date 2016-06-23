@@ -9,45 +9,45 @@
 		display: 100%;
 }	
 .body {
-	margin: 0 10% 0 10%; 	/*//TRBL//*/
-
+	margin: 0 10% 0 10%; /*//TRBL//*/
 }
-.header {
+.header {									/*Shrinks with window*/
+	top:0;
 	background: #ebebeb;
 	text-align: center;
-	width: 60% 60%;
 	height: 100px;
-	margin: 10px 10px 10px 0px;
-	padding: 10px 100px 0px 100px;	/*//TRBL//*/
-	position: static;
+	width: 1100px;
+	margin: 10px 10px 10px 10px;	
 }
-.nav {
+.nav {										/*Goes behind other elements*/
 	background: #ebebeb;
 	text-align: center;
-	width: 60% 60%;
 	height: 100px;
+	width: 1100px;
+	margin: 10px 10px 10px 10px;
 	position: fixed;
-	margin: 10px 10px 10px 0px;
-	padding: 10px 100px 0px 100px;
-	overflow: scroll;
+
 }
 .section {
 	background: #ebebeb;
-	width: 960px;
+	width: 495px;
 	height: 495px;
 	float: left;
-	text-align: center;	
-	position: absolute;
+	text-align: center;
+	margin: 10px 10px 10px 10px;
+	position: relative;
+
 }
-#article {
-	background: #ebebeb;
+#article {									/*Getting its own margin*/
 	background-color: #777;
-	font-color: #777;
-	position: absolute;
-	width: 40%;
-	height: 30%;
-	float: center;
+	position: relative;
+	width: 250px;
+	height: 350px;
+	padding: 10px 5px;
 	text-align: center;	
+	text-decoration-color: #ebebeb;			/*Color not formatting*/
+	margin: 0 0 0 0;
+
 }
 #hp{
 	background: #ebebeb;
@@ -58,19 +58,20 @@
 }
 #aside{
 	background: #ebebeb;
-	width: 960px;
+	width: 495px;
 	height: 495px;
+	margin: 10px 28px 10px 10px;
 	text-align: center;
 	float: right;
-	position: relative;
+	position: relative;						/*Moving with window*/
 
 }
 .footer {
+	bottom:0;
 	background: #ebebeb;
 	text-align: center;
-	width: 60% 60%;
 	height: 100px;
-	padding: 10px 60px 0px 60px;	/*//TRBL//*/
-	margin: 10px 10px 10px 0px;
-	position: absolute;
+	width: 1100px;
+	margin: 10px 10px 10px 10px;	/*//TRBL//*/
+	position:absolute;
 }
