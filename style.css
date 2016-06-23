@@ -1,65 +1,76 @@
 *{
+	
 	background-color: #777;
 	font-size: 18px;
-	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+.clear {
+		overflow: auto;
+		display: 100%;
+}	
+.body {
+	margin: 0 10% 0 10%; 	/*//TRBL//*/
+
 }
 .header {
 	background: #ebebeb;
 	text-align: center;
 	width: 60% 60%;
-	height: 15px;
-	padding: 2% 0;
+	height: 100px;
 	margin: 10px 10px 10px 0px;
-	position: absolute top;
+	padding: 10px 100px 0px 100px;	/*//TRBL//*/
+	position: static;
 }
 .nav {
 	background: #ebebeb;
 	text-align: center;
-	width: 100%;
-	height: 115px;
-	margin: 10px 0px;
-	position: fixed;
-}
-.footer {
-	background: #ebebeb;
-	text-align: center;
 	width: 60% 60%;
-	height: 15px;
-	padding: 2% 0;
+	height: 100px;
+	position: fixed;
 	margin: 10px 10px 10px 0px;
-	position: bottom;
+	padding: 10px 100px 0px 100px;
+	overflow: scroll;
 }
 .section {
 	background: #ebebeb;
 	width: 960px;
 	height: 495px;
-	position: static left;
+	float: left;
 	text-align: center;	
+	position: absolute;
 }
 #article {
 	background: #ebebeb;
 	background-color: #777;
-	position: static;
+	font-color: #777;
+	position: absolute;
 	width: 40%;
 	height: 30%;
 	float: center;
 	text-align: center;	
 }
-#div4{
-	position: right;
+#hp{
+	background: #ebebeb;
+	font-color:#777;
 	text-align: center;
+	position: right;
 	position: relative;
 }
-#div5{
-	position: right;
-	text-align: center;
-	position: relative;
-}
-#div6{
+#aside{
 	background: #ebebeb;
 	width: 960px;
 	height: 495px;
-	position: relative right;
 	text-align: center;
+	float: right;
+	position: relative;
 
+}
+.footer {
+	background: #ebebeb;
+	text-align: center;
+	width: 60% 60%;
+	height: 100px;
+	padding: 10px 60px 0px 60px;	/*//TRBL//*/
+	margin: 10px 10px 10px 0px;
+	position: absolute;
 }
